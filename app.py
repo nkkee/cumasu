@@ -13,7 +13,7 @@ load_dotenv(dotenv_path)
 #load_dotenv(dotenv_path, verbose=True)
 
 app = Flask(__name__)
-print os.environ['test']
+print(os.environ['test'])
 # Find these values at https://twilio.com/user/account
 account_sid = os.environ['TWILIO_ACCOUNT_SID']
 auth_token = os.environ['TWILIO_AUTH_TOKEN']
