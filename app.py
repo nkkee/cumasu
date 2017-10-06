@@ -1,6 +1,7 @@
 import os
 from flask import Flask, request
 from twilio.rest import Client
+from twilio.twiml.messaging_response import MessagingResponse
  
 # settings.py
 from os.path import join, dirname
@@ -29,7 +30,16 @@ def receive_order():
     
     return '', 200
 
- 
+ @app.route("/sms", methods=['GET', 'POST'])
+def sms_reply():
+    """Respond to incoming calls with a simple text message."""
+    # Start our TwiML response
+    resp = MessagingResponse()
+
+    # Add a message
+    resp.message("The Robots are coming! Head for the hills!")
+
+    return str(resp)
  
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
