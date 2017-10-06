@@ -30,7 +30,7 @@ def receive_order():
     
     return '', 200
 
- @app.route("/sms", methods=['GET', 'POST'])
+@app.route("/sms", methods=['GET', 'POST'])
 def sms_reply():
     """Respond to incoming calls with a simple text message."""
     # Start our TwiML response
