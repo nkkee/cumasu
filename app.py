@@ -2,6 +2,7 @@ import os
 from flask import Flask, request
 from twilio.rest import Client
 from twilio.twiml.messaging_response import MessagingResponse
+from pyrebase import pyrebase
  
 # settings.py
 from os.path import join, dirname
@@ -26,7 +27,7 @@ def receive_order():
     message = client.messages.create(
         to=os.environ['PHONE_NUMBER'],
         from_=os.environ['TWILIO_NUMBER'],
-        body="Finally it WORKED!")
+        body="Welcome")
     
     return '', 200
 
@@ -36,11 +37,41 @@ def sms_reply():
     # Start our TwiML response
     resp = MessagingResponse()
 
-    # Add a message
-    resp.message("The Robots are coming! Head for the hills!")
 
+    config = {
+      "apiKey": "AIzaSyBg0TlfTsH8qjIU8VnmNJ8rTb8e5TK8b0c",
+      "authDomain": "cumasu-1.firebaseapp.com",
+      "databaseURL": "https://cumasu-1.firebaseio.com",
+      "storageBucket": "cumasu-1.appspot.com",
+      "serviceAccount": "cumasu.json"
+    }
+
+    #Database
+    firebase = pyrebase.initialize_app(config)
+
+    auth = firebase.auth()
+    #authenticate a user
+    user = auth.sign_in_with_email_and_password("nickscene1@gmail.com", "cumasu")
+
+    db = firebase.database()
+
+    # Get msg + phone number from Twilio
+    message = request.values.get('Body', None)
+    phone_number = request.values.get('From', None)
+
+    # Save the message to the database
+    data = {"message": message}
+    db.child("users").child(phone_number).set(data, user['idToken'])
+
+    # Add a message
+    resp.message("What date should we set your appointment for?")
     return str(resp)
+    
+    
+
+    #read response
  
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
+
