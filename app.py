@@ -27,7 +27,7 @@ def receive_order():
     message = client.messages.create(
         to=os.environ['PHONE_NUMBER'],
         from_=os.environ['TWILIO_NUMBER'],
-        body="Welcome")
+        body="Welcome to Cumasu")
     
     return '', 200
 
