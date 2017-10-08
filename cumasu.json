@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cumasu-182211",
+  "private_key_id": "7489651b32e5232165215c7e36db7314d5f831d1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCxIxMxYdCvhnW3\n1hZ+E8h8zbAYDeF5szve0oM9p/ktpV0rz/akIr0ZHknSzwuSLIPgv5sSY/r1EdTT\nexZ+rpWc6taZP/fTHZ7g0JOG4e8/UPObp5SY93lRQh4cXkYvPjbJ7eVUdz709+qG\n171JhDOS+lSGh3ajPib59+dUD8dVX0cjk9D3ChurbN+dQmnron8gFdtypLXO7XBr\n26cAnK6Nf2l51i+sauiLEusgQ1v/h+YpsjyR2DmJhRqZPIizgFZ2ORiDBW2yW3GL\ngIb5km6rk8P7Y1HihpnHswEc2IBCFRFFQ9TjkTcOtIAmWzd9UJIQGfmwDTgh9phi\nXcruUsxTAgMBAAECggEATnvxfZBO4+6KCvWXCq6eRrnl+4pu7Dq/XLdeQfvCWnip\n4wcmS0w/B7mVUQu+nzoNBpAu18OnxlzrtPYVHfUhwiCFC+q9VfOKWSbhLsK9fArU\nnRNvsiT4QkouyDf3FeiVYvv+f+HD6ctMxQkiy8eBCG7U87RimuqnX1r5SpQhKFAt\ndiEz3NS9PkT7kCakLDKl32gZxy3CGi6RCjnTFVnAHTXB1p9+Mw4HosLS4YF542+u\n6aSR0uQi/CpW0p6ITDtYgHr4G4+M67iq/aQnc1z/hHWIlSLj2K03RlKpU6jAFCZ8\nCK4tUkohBxwOmhJpWxwQHZf4tVF2zKBPuGuOjf/qeQKBgQDeUVvbiC5dnhD53FRX\ntAugA1PDPgOPdiH3EcrFQOZrfv0dzvq5k4oPhAsXrF7ks0/xVxVeqiXB+pn2+w1c\nDBQDm1wd9dXg3eFc9ICquJzrXJrEU+nzNYlHb+kw3iLHH8c0nUcGM7WzEKmt+lYp\nADSFNTGuq5smHe+KrGYfGx4LCQKBgQDL+V6s0XdtQHOBGRpubVNZBaa0l+vlNYCM\nN0PnHKq4zBSEGLH5Uj9kD4DXEZ/ETbC0Q2g+SLFzKSaB5ylaIUU3p3TOTqWQUZzw\nEOmtk4gpk+WrNhXAYWqpEUFHv/w945XSiuasoDsx4paB1nVjf6P550DyKS9+cNhC\nM0l/tDRHewKBgCMQ0B1LWIzZnrHaZ89BjcfaXn7gLC2Xo3nV65a7StzPtdrax783\nn0IdQKamQH1wLv7RDoTU74muHlTPemb3XLzI53muSeLi/GXuBtFmtxGElMC8v5zl\n59ZFt5FGqFOiFoic+hPnWhR5X1oarzZeWupb3o8/cAROGndUA/OKEm4JAoGBAKSr\nEQ+bmzqMCbNzPK9heyQnN8oby8kjRD/ubdcqgXjm6Lkr5qJND/gLvAvkooKr5bfh\no0qFDRzXX8sHf47PxT2E5vuW6np0KKp2PPBwZkCKsaNi6nSBMMaEs5rlFxIvpUhv\n8oHyaVeAgdkX9XT6GrspQnk9XqZJG412MiPyqzH5AoGBAIUM/9t7Ds1KmDj401xo\n4D0VG644SIawVcVIxCEpJ1bi/N+eOCRDVnVCq6spZZu+mHE1tli6u4t4f8l9A5uZ\n0lhd+ZoP6Vcgpo4VluZ2vRy9gd166TVquKzlxubBd+fh3M7Fls7b31806JnrUUPZ\njbxLbFknN0T/VG4KkBLizWmZ\n-----END PRIVATE KEY-----\n",
+  "client_email": "cumasu-937@cumasu-182211.iam.gserviceaccount.com",
+  "client_id": "104724431914097703111",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cumasu-937%40cumasu-182211.iam.gserviceaccount.com"
+}
