@@ -20,7 +20,7 @@ python-apt==0.9.3.5ubuntu2
 python-jwt==2.0.1
 requests==2.11.1
 requests-toolbelt==0.7.0
-rsa==3.4.2
+rsa==4.1
 six==1.11.0
 ufw==0.34-rc-0ubuntu2
 unattended-upgrades==0.1
